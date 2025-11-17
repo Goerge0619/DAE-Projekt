@@ -1,0 +1,50 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 97vh;
+}
+
+main{
+  display: flex;
+  gap: 20px;
+}
+
+.page-link-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(179, 179, 179);
+  box-shadow: 2px 2px 5px black;
+  border-radius: 20px;
+  transition: all 0.25s ease;
+}
+
+h1{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width:670px){
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.page-link-container:hover{
+  box-shadow: 3px 3px 5px 2px black;
+  opacity: 0.9;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.page-link-container:active{
+  opacity: 0.7;
+}
+
+.icon{
+  height: 70%;
+}

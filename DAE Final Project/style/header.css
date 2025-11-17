@@ -1,0 +1,97 @@
+.header{
+  background-color: white;
+  box-shadow: 3px 3px 5px rgb(98, 98, 98);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 55px;
+  border-bottom-left-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  z-index: 101;
+}
+
+.header-left-part{
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: default;
+}
+
+.hamburger-menu{
+  padding: 5px;
+  position: absolute;
+  height: 35px;
+  top: 5px;
+  left: 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.hamburger-menu:hover{
+  background-color: rgba(234, 234, 234, 0.586);
+}
+
+.hamburger-menu:active{
+  opacity: 0.7;
+}
+
+.logo{
+  margin: 0px 0px 0px 60px;
+  padding: 0;
+  font-family: arial;
+  font-style: oblique;
+  font-weight: 900;
+  font-size: 40px;
+  z-index: 100;
+}
+
+.logo span{
+  color: red;
+}
+
+.header-bottom-part{
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.shop-cart-container{
+  padding: 0px 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  border-radius: 50px;
+  width: fit-content;
+  box-shadow: -3px -3px 5px gray;
+  transition: all 0.15s;
+}
+
+.shop-cart{
+  height: 60%;
+}
+
+.shop-cart-container:hover{
+  box-shadow: 0px 0px 7px 2px gray;
+}
+
+.shop-cart-container{
+  position: relative;
+}
+
+.shop-cart-container .tool-tip{
+  position: absolute;
+  left: 30px;
+  bottom: 0px;
+  color: white;
+  background-color: rgb(4, 0, 132);
+  border-radius: 50px;
+  padding: 2px 6px;
+  font-size: 11px;
+  font-weight: 800;
+}

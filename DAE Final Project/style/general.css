@@ -1,0 +1,15 @@
+body{
+  margin: 0px;
+  padding: 0;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
